@@ -23,7 +23,7 @@ th{background:#f3f3f3}.sw{text-align:right}.sw button{padding:4px 12px;margin-le
 
 <h2>1. 収集する情報</h2>
 <h3>1-1 端末内にのみ保存する情報</h3>
-<p>ハイスコア、到達ステージ、効果音・ハプティクスの設定、チュートリアル表示状況、広告表示回数のカウンタ、プレミアム状態のキャッシュ等のゲーム進行・設定情報は、端末内(UserDefaults)にのみ保存されます。本アプリ独自のサーバへは送信されません。</p>
+<p>ハイスコア、到達ステージ、効果音・ハプティクスの設定、チュートリアル表示状況、広告表示回数のカウンタ等のゲーム進行・設定情報は、端末内(UserDefaults)にのみ保存されます。本アプリ独自のサーバへは送信されません。</p>
 <h3>1-2 端末センサー</h3>
 <p>端末の傾き(CoreMotion)をゲーム操作・カメラ演出のために使用します。この情報は端末内でリアルタイムに処理されるのみで、保存も送信もしません。</p>
 <h3>1-3 広告配信により自動的に収集される情報</h3>
@@ -35,17 +35,15 @@ th{background:#f3f3f3}.sw{text-align:right}.sw button{padding:4px 12px;margin-le
 <ul>
 <li>ゲームの進行・設定の保持</li>
 <li>広告の配信、効果測定、不正防止(Google AdMob)</li>
-<li>プレミアム(有料プラン)の購入状態の確認(広告非表示・特典の提供)</li>
 <li>操作(傾き)によるゲーム体験の提供</li>
 </ul>
 
 <h2>3. 第三者サービスへの情報提供</h2>
 <table>
 <tr><th>サービス</th><th>取得されうる情報</th><th>目的・条件</th></tr>
-<tr><td>Google AdMob(Google LLC)</td><td>広告識別子(許可時のみ)、IPアドレス、端末情報、広告・アプリ操作情報、診断データ、大まかな地域</td><td>バナー・インタースティシャル・リワード広告の配信。プレミアム購入中は広告を表示しません。<a href="https://policies.google.com/technologies/partner-sites">Googleによるデータの利用方法</a>、<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a></td></tr>
+<tr><td>Google AdMob(Google LLC)</td><td>広告識別子(許可時のみ)、IPアドレス、端末情報、広告・アプリ操作情報、診断データ、大まかな地域</td><td>バナー・インタースティシャル・リワード広告の配信。<a href="https://policies.google.com/technologies/partner-sites">Googleによるデータの利用方法</a>、<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a></td></tr>
 <tr><td>Google UMP(同意管理)</td><td>同意の選択内容</td><td>EEA・英国等では起動時に同意フォームを表示し、同意内容に応じて広告配信を調整します。設定画面の「プライバシー設定」から変更できます(表示される地域のみ)。</td></tr>
 <tr><td>Apple App Tracking Transparency</td><td>トラッキング許可の可否</td><td>許可した場合のみ広告識別子(IDFA)を広告に利用します。拒否してもアプリは利用でき、パーソナライズされない広告が表示されます。</td></tr>
-<tr><td>Apple StoreKit / App Store</td><td>購入履歴、サブスクリプション状態</td><td>プレミアムの購入・復元・状態確認のため。決済情報(カード番号等)はAppleが処理し、本アプリは取得しません。</td></tr>
 </table>
 <p>本アプリは、上記を除き、ユーザーの情報を第三者へ販売・提供しません。</p>
 
@@ -53,7 +51,7 @@ th{background:#f3f3f3}.sw{text-align:right}.sw button{padding:4px 12px;margin-le
 <p>広告の関連性向上のため、iOSのトラッキング許可ダイアログを表示することがあります。許可しない場合も本アプリのすべての機能を利用できます。設定は「設定 &gt; プライバシーとセキュリティ &gt; トラッキング」からいつでも変更できます。パーソナライズ広告の制限は、iOSの「設定 &gt; プライバシーとセキュリティ &gt; Apple広告」等でも行えます。</p>
 
 <h2>5. データの保存と削除</h2>
-<p>端末内データは、本アプリを削除することで消去されます。AdMob等が保有する情報の削除・開示のご請求は、各事業者のポリシーに従ってください。サブスクリプションの管理・解約はApple IDの設定から行います(利用規約参照)。</p>
+<p>端末内データは、本アプリを削除することで消去されます。AdMob等が保有する情報の削除・開示のご請求は、各事業者のポリシーに従ってください。</p>
 
 <h2>6. 子どものプライバシー</h2>
 <p>本アプリは13歳未満(地域により16歳未満)の子どもを対象としていません。子どもから意図的に個人情報を収集することはありません。該当する情報が含まれていると気付いた場合は、下記へご連絡ください。</p>
@@ -76,7 +74,7 @@ th{background:#f3f3f3}.sw{text-align:right}.sw button{padding:4px 12px;margin-le
 
 <h2>1. Information We Handle</h2>
 <h3>1-1 Data stored only on your device</h3>
-<p>Game progress and settings (high score, highest stage reached, sound/haptics settings, tutorial status, an ad-frequency counter, and a cached premium status) are stored only on your device (UserDefaults). They are never sent to our servers.</p>
+<p>Game progress and settings (high score, highest stage reached, sound/haptics settings, tutorial status, and an ad-frequency counter) are stored only on your device (UserDefaults). They are never sent to our servers.</p>
 <h3>1-2 Device sensors</h3>
 <p>The App uses device motion (CoreMotion, tilt) for gameplay and camera effects. It is processed in real time on the device only, and is neither stored nor transmitted.</p>
 <h3>1-3 Information collected automatically through advertising</h3>
@@ -88,17 +86,15 @@ th{background:#f3f3f3}.sw{text-align:right}.sw button{padding:4px 12px;margin-le
 <ul>
 <li>Keeping game progress and settings</li>
 <li>Ad delivery, measurement and fraud prevention (Google AdMob)</li>
-<li>Verifying Premium purchase status (ad removal and benefits)</li>
 <li>Providing tilt-based gameplay</li>
 </ul>
 
 <h2>3. Third-Party Services</h2>
 <table>
 <tr><th>Service</th><th>Data that may be collected</th><th>Purpose / conditions</th></tr>
-<tr><td>Google AdMob (Google LLC)</td><td>Advertising ID (only if permitted), IP address, device info, ad/in-app interaction data, diagnostics, approximate location</td><td>Serving banner, interstitial and rewarded ads. No ads are shown while Premium is active. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses data</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</td></tr>
+<tr><td>Google AdMob (Google LLC)</td><td>Advertising ID (only if permitted), IP address, device info, ad/in-app interaction data, diagnostics, approximate location</td><td>Serving banner, interstitial and rewarded ads. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses data</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</td></tr>
 <tr><td>Google UMP (consent management)</td><td>Your consent choices</td><td>In the EEA, UK and similar regions a consent form is shown at launch, and ad delivery is adjusted accordingly. You can change it under "Privacy settings" in the app (shown only where applicable).</td></tr>
 <tr><td>Apple App Tracking Transparency</td><td>Your tracking permission choice</td><td>The advertising identifier (IDFA) is used for ads only if you allow it. If you decline, the App remains fully usable and non-personalized ads are shown.</td></tr>
-<tr><td>Apple StoreKit / App Store</td><td>Purchase history, subscription status</td><td>To purchase, restore and verify Premium. Payment details are processed by Apple; we do not receive them.</td></tr>
 </table>
 <p>Other than the above, we do not sell or share your information with third parties.</p>
 
@@ -106,7 +102,7 @@ th{background:#f3f3f3}.sw{text-align:right}.sw button{padding:4px 12px;margin-le
 <p>To improve ad relevance, the App may show the iOS tracking permission prompt. All features remain available if you decline. You can change this anytime in Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
 
 <h2>5. Retention and Deletion</h2>
-<p>On-device data is removed when you delete the App. For requests regarding data held by AdMob or other providers, please follow their policies. Subscriptions are managed and cancelled in your Apple ID settings (see Terms of Use).</p>
+<p>On-device data is removed when you delete the App. For requests regarding data held by AdMob or other providers, please follow their policies.</p>
 
 <h2>6. Children's Privacy</h2>
 <p>The App is not directed to children under 13 (or under 16 in some regions), and we do not knowingly collect personal information from children. If you believe such information was collected, please contact us below.</p>
